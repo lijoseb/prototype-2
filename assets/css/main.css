@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "NeueMontreal-Regular";
+    src: url("assets/css/fonts/NeueMontreal-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BasicallyAMono-Regular";
+    src: url("assets/css/fonts/BasicallyAMono-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 56.25%;
+}
+
+body {
+    background-color: #000000;
+    color: #e6e6e6;
+    font-family: BasicallyAMono-Regular, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+::selection {
+    background: #808080;
+    color: #e6e6e6;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #e6e6e6;
+    border-bottom: ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e6e6e6;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+.gift-wrap {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    height: 10%;
+    width: 100%;
+    padding: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    transition: 0.25s;
+    border-bottom: 0.25vh solid #e6e6e6;
+}
+
+.right {
+    height: 90%;
+    width: 100%;
+    padding: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    transition: 0.25s;
+}
+
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+/*INDEX PAGE*/
+
+.site-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    font-family: BasicallyAMono-Regular, Helvetica, sans-serif;
+    text-transform: ;
+    font-size: .75em;
+    text-align: center;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links {
+    font-family: BasicallyAMono-Regular, Helvetica, sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: .5em;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.5s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: ;
+}
+
+.animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*GRID*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+}
+
+.container_item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
+    width: 15vw;
+    height: 15vw;
+}
+
+.layer1 {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: .5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.layer2 {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all 0.5s ease 0s;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.layer2:hover {
+    opacity: 0;
+}
+
+/*FOCUS*/
+
+.slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides {
+    display: none;
+    height: 100%;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: #e6e6e6;
+    padding: 5em 5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .25em;
+}
+
+/*ABOUT*/
+
+section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.section {
+    font-family: BasicallyAMono-Regular, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: .5em;
+    border: ;
+    border-radius: 1em;
+    margin: 0px auto;
+    padding: 2%;
+    margin-bottom: 2.5%;
+}
+
+p {
+    font-size: .5em;
+    line-height: 125%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
